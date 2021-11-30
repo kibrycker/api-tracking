@@ -1,0 +1,25 @@
+### Тестирование модуля
+POST https://martishkin.localhost/microbase/html/api-tracking/default
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "test"
+}
+
+### Получение данных по отправлениям через Единичный доступ
+POST https://martishkin.localhost/microbase/html/api-tracking/default
+Content-Type: application/json
+
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "single-check",
+  "params": {
+    "barcode": "RA644000001RU",
+    "messageType": 0,
+    "language": "RUS"
+  }
+}
+

@@ -1,0 +1,40 @@
+{
+  "name": "kibrycker/api-tracking",
+  "description": "description",
+  "keywords": [
+  ],
+  "type": "yii2-extension",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "~7.4 || ~8.0",
+    "ext-mbstring": "*",
+    "ext-json": "*",
+    "ext-zip": "*",
+    "ext-http": "*",
+    "yiisoft/yii2": "~2.0.0",
+    "cranetm/yii2-json-rpc-2.0": "~1.2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.5.0",
+    "yiisoft/yii2-debug": "~2.0",
+    "yiisoft/yii2-gii": "~2.0",
+    "yiisoft/yii2-faker": "~2.0",
+    "roave/security-advisories": "dev-latest"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "kibrycker\\api\\tracking\\": "src"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
